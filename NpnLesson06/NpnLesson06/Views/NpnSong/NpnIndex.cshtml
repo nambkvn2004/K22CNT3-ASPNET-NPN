@@ -1,0 +1,51 @@
+﻿@model IEnumerable<NpnLesson06.Models.NpnSong>
+
+@{
+    ViewBag.Title = "Npn: Danh sách bài hát";
+}
+
+<h2>Npn: Danh sách bài hát</h2>
+
+<p>
+    @Html.ActionLink("Create New", "NpnCreate")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NpnTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NpnAuthor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NpnArtist)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NpnYearRelease)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NpnTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NpnAuthor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NpnArtist)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NpnYearRelease)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
