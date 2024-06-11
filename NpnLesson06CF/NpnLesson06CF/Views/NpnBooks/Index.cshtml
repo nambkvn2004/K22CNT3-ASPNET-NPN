@@ -1,0 +1,69 @@
+﻿@model IEnumerable<NpnLesson06CF.Models.NpnBook>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NpnBookID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NpnTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NpnAuthor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NpnYear)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NpnPulisher)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NpnPicture)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NpnCategoryId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NpnBookID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NpnTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NpnAuthor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NpnYear)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NpnPulisher)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NpnPicture)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NpnCategoryId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.NpnId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.NpnId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.NpnId })
+        </td>
+    </tr>
+}
+
+</table>

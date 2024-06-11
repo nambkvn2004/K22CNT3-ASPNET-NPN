@@ -1,0 +1,74 @@
+﻿@model NpnLesson06CF.Models.NpnBook
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>NpnBook</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NpnBookID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NpnBookID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NpnTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NpnTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NpnAuthor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NpnAuthor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NpnYear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NpnYear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NpnPulisher)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NpnPulisher)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NpnPicture)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NpnPicture)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NpnCategoryId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NpnCategoryId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.NpnId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

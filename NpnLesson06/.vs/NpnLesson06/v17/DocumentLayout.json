@@ -7,19 +7,19 @@
       "RelativeMoniker": "D:0:0:{4E8CC496-4D60-4984-95DC-443D981908A5}|NpnLesson06\\NpnLesson06.csproj|solutionrelative:npnlesson06\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E8CC496-4D60-4984-95DC-443D981908A5}|NpnLesson06\\NpnLesson06.csproj|c:\\k22cnt3\\k22cnt3-aspnetmvc-nguyenphunam\\npnlesson06\\npnlesson06\\controllers\\npnsongcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4E8CC496-4D60-4984-95DC-443D981908A5}|NpnLesson06\\NpnLesson06.csproj|C:\\K22CNT3\\K22CNT3-ASPNETMVC-NguyenPhuNam\\NpnLesson06\\npnlesson06\\controllers\\npnsongcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E8CC496-4D60-4984-95DC-443D981908A5}|NpnLesson06\\NpnLesson06.csproj|solutionrelative:npnlesson06\\controllers\\npnsongcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E8CC496-4D60-4984-95DC-443D981908A5}|NpnLesson06\\NpnLesson06.csproj|c:\\k22cnt3\\k22cnt3-aspnetmvc-nguyenphunam\\npnlesson06\\npnlesson06\\models\\npnsong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4E8CC496-4D60-4984-95DC-443D981908A5}|NpnLesson06\\NpnLesson06.csproj|C:\\K22CNT3\\K22CNT3-ASPNETMVC-NguyenPhuNam\\NpnLesson06\\npnlesson06\\models\\npnsong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E8CC496-4D60-4984-95DC-443D981908A5}|NpnLesson06\\NpnLesson06.csproj|solutionrelative:npnlesson06\\models\\npnsong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E8CC496-4D60-4984-95DC-443D981908A5}|NpnLesson06\\NpnLesson06.csproj|c:\\k22cnt3\\k22cnt3-aspnetmvc-nguyenphunam\\npnlesson06\\npnlesson06\\views\\npnsong\\npncreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4E8CC496-4D60-4984-95DC-443D981908A5}|NpnLesson06\\NpnLesson06.csproj|C:\\K22CNT3\\K22CNT3-ASPNETMVC-NguyenPhuNam\\NpnLesson06\\npnlesson06\\views\\npnsong\\npncreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4E8CC496-4D60-4984-95DC-443D981908A5}|NpnLesson06\\NpnLesson06.csproj|solutionrelative:npnlesson06\\views\\npnsong\\npncreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E8CC496-4D60-4984-95DC-443D981908A5}|NpnLesson06\\NpnLesson06.csproj|c:\\k22cnt3\\k22cnt3-aspnetmvc-nguyenphunam\\npnlesson06\\npnlesson06\\views\\npnsong\\npnindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4E8CC496-4D60-4984-95DC-443D981908A5}|NpnLesson06\\NpnLesson06.csproj|C:\\K22CNT3\\K22CNT3-ASPNETMVC-NguyenPhuNam\\NpnLesson06\\npnlesson06\\views\\npnsong\\npnindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4E8CC496-4D60-4984-95DC-443D981908A5}|NpnLesson06\\NpnLesson06.csproj|solutionrelative:npnlesson06\\views\\npnsong\\npnindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -42,8 +42,7 @@
               "RelativeToolTip": "NpnLesson06\\Views\\NpnSong\\NpnCreate.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-29T03:35:13.391Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-29T03:35:13.391Z"
             },
             {
               "$type": "Document",
@@ -55,8 +54,7 @@
               "RelativeToolTip": "NpnLesson06\\Views\\NpnSong\\NpnIndex.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-29T03:24:46.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-29T03:24:46.218Z"
             },
             {
               "$type": "Document",
@@ -68,8 +66,7 @@
               "RelativeToolTip": "NpnLesson06\\Controllers\\NpnSongController.cs",
               "ViewState": "AQIAAAIAAAAAAAAAAAAewA4AAABxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T03:06:57.874Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-29T03:06:57.874Z"
             },
             {
               "$type": "Document",
@@ -81,8 +78,7 @@
               "RelativeToolTip": "NpnLesson06\\Models\\NpnSong.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAqwBsAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T03:02:33.987Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-29T03:02:33.987Z"
             },
             {
               "$type": "Document",
@@ -92,7 +88,7 @@
               "RelativeDocumentMoniker": "NpnLesson06\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\K22CNT3\\K22CNT3-ASPNETMVC-NguyenPhuNam\\NpnLesson06\\NpnLesson06\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "NpnLesson06\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAwwBYAAAA9AAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAwwAkAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-29T02:58:52.35Z",
               "EditorCaption": ""

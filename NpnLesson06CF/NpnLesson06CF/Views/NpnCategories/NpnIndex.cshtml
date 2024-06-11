@@ -1,0 +1,33 @@
+﻿@model IEnumerable<NpnLesson06CF.Models.NpnCategory>
+
+@{
+    ViewBag.Title = "NpnIndex";
+}
+
+<h2>NpnIndex</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NpnCategoryName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NpnCategoryName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.NpnId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.NpnId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.NpnId })
+        </td>
+    </tr>
+}
+
+</table>
