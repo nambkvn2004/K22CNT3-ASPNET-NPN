@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="K22CNT3NPNModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="npnKhoa">
+    <Key>
+      <PropertyRef Name="NpnMaKH" />
+    </Key>
+    <Property Name="NpnMaKH" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="NpnTenKH" Type="nvarchar" MaxLength="50" />
+    <Property Name="NpnTrangThai" Type="bit" />
+  </EntityType>
+  <EntityType Name="npnSinhVien">
+    <Key>
+      <PropertyRef Name="NpnMaSV" />
+    </Key>
+    <Property Name="NpnMaSV" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="NpnHoSV" Type="nvarchar" MaxLength="50" />
+    <Property Name="NpnTenSV" Type="nvarchar" MaxLength="50" />
+    <Property Name="NpnNgaySinh" Type="date" />
+    <Property Name="NpnPhai" Type="bit" />
+    <Property Name="NpnPhone" Type="nchar" MaxLength="10" />
+    <Property Name="NpnEmail" Type="nvarchar" MaxLength="50" />
+    <Property Name="NpnMaKH" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <Association Name="FK_npnSinhVien_npnKhoa">
+    <End Role="npnKhoa" Type="Self.npnKhoa" Multiplicity="0..1" />
+    <End Role="npnSinhVien" Type="Self.npnSinhVien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="npnKhoa">
+        <PropertyRef Name="NpnMaKH" />
+      </Principal>
+      <Dependent Role="npnSinhVien">
+        <PropertyRef Name="NpnMaKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="K22CNT3NPNModel1StoreContainer">
+    <EntitySet Name="npnKhoa" EntityType="Self.npnKhoa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="npnSinhVien" EntityType="Self.npnSinhVien" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_npnSinhVien_npnKhoa" Association="Self.FK_npnSinhVien_npnKhoa">
+      <End Role="npnKhoa" EntitySet="npnKhoa" />
+      <End Role="npnSinhVien" EntitySet="npnSinhVien" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

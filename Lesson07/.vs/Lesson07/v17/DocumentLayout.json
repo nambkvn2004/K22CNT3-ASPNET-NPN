@@ -1,0 +1,155 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\K22CNT3\\K22CNT3-ASPNETMVC-NguyenPhuNam\\Lesson07\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FE2B7015-F05B-4339-8239-2EBD7E373CF9}|Lesson07\\Lesson07.csproj|c:\\k22cnt3\\k22cnt3-aspnetmvc-nguyenphunam\\lesson07\\lesson07\\views\\npnkhoas\\npnindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FE2B7015-F05B-4339-8239-2EBD7E373CF9}|Lesson07\\Lesson07.csproj|solutionrelative:lesson07\\views\\npnkhoas\\npnindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE2B7015-F05B-4339-8239-2EBD7E373CF9}|Lesson07\\Lesson07.csproj|c:\\k22cnt3\\k22cnt3-aspnetmvc-nguyenphunam\\lesson07\\lesson07\\controllers\\npnsinhvienscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE2B7015-F05B-4339-8239-2EBD7E373CF9}|Lesson07\\Lesson07.csproj|solutionrelative:lesson07\\controllers\\npnsinhvienscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE2B7015-F05B-4339-8239-2EBD7E373CF9}|Lesson07\\Lesson07.csproj|c:\\k22cnt3\\k22cnt3-aspnetmvc-nguyenphunam\\lesson07\\lesson07\\controllers\\npnkhoascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE2B7015-F05B-4339-8239-2EBD7E373CF9}|Lesson07\\Lesson07.csproj|solutionrelative:lesson07\\controllers\\npnkhoascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE2B7015-F05B-4339-8239-2EBD7E373CF9}|Lesson07\\Lesson07.csproj|c:\\k22cnt3\\k22cnt3-aspnetmvc-nguyenphunam\\lesson07\\lesson07\\views\\npnkhoas\\npncreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FE2B7015-F05B-4339-8239-2EBD7E373CF9}|Lesson07\\Lesson07.csproj|solutionrelative:lesson07\\views\\npnkhoas\\npncreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE2B7015-F05B-4339-8239-2EBD7E373CF9}|Lesson07\\Lesson07.csproj|c:\\k22cnt3\\k22cnt3-aspnetmvc-nguyenphunam\\lesson07\\lesson07\\models\\mode2210900047.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{FE2B7015-F05B-4339-8239-2EBD7E373CF9}|Lesson07\\Lesson07.csproj|solutionrelative:lesson07\\models\\mode2210900047.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE2B7015-F05B-4339-8239-2EBD7E373CF9}|Lesson07\\Lesson07.csproj|c:\\k22cnt3\\k22cnt3-aspnetmvc-nguyenphunam\\lesson07\\lesson07\\models\\npnketnoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE2B7015-F05B-4339-8239-2EBD7E373CF9}|Lesson07\\Lesson07.csproj|solutionrelative:lesson07\\models\\npnketnoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE2B7015-F05B-4339-8239-2EBD7E373CF9}|Lesson07\\Lesson07.csproj|c:\\k22cnt3\\k22cnt3-aspnetmvc-nguyenphunam\\lesson07\\lesson07\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{FE2B7015-F05B-4339-8239-2EBD7E373CF9}|Lesson07\\Lesson07.csproj|solutionrelative:lesson07\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE2B7015-F05B-4339-8239-2EBD7E373CF9}|Lesson07\\Lesson07.csproj|c:\\k22cnt3\\k22cnt3-aspnetmvc-nguyenphunam\\lesson07\\lesson07\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FE2B7015-F05B-4339-8239-2EBD7E373CF9}|Lesson07\\Lesson07.csproj|solutionrelative:lesson07\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NpnSinhViensController.cs",
+              "DocumentMoniker": "C:\\K22CNT3\\K22CNT3-ASPNETMVC-NguyenPhuNam\\Lesson07\\Lesson07\\Controllers\\NpnSinhViensController.cs",
+              "RelativeDocumentMoniker": "Lesson07\\Controllers\\NpnSinhViensController.cs",
+              "ToolTip": "C:\\K22CNT3\\K22CNT3-ASPNETMVC-NguyenPhuNam\\Lesson07\\Lesson07\\Controllers\\NpnSinhViensController.cs",
+              "RelativeToolTip": "Lesson07\\Controllers\\NpnSinhViensController.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAcwBEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T04:08:58.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NpnIndex.cshtml",
+              "DocumentMoniker": "C:\\K22CNT3\\K22CNT3-ASPNETMVC-NguyenPhuNam\\Lesson07\\Lesson07\\Views\\NpnKhoas\\NpnIndex.cshtml",
+              "RelativeDocumentMoniker": "Lesson07\\Views\\NpnKhoas\\NpnIndex.cshtml",
+              "ToolTip": "C:\\K22CNT3\\K22CNT3-ASPNETMVC-NguyenPhuNam\\Lesson07\\Lesson07\\Views\\NpnKhoas\\NpnIndex.cshtml",
+              "RelativeToolTip": "Lesson07\\Views\\NpnKhoas\\NpnIndex.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T04:07:30.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Mode2210900047.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\K22CNT3\\K22CNT3-ASPNETMVC-NguyenPhuNam\\Lesson07\\Lesson07\\Models\\Mode2210900047.edmx",
+              "RelativeDocumentMoniker": "Lesson07\\Models\\Mode2210900047.edmx",
+              "ToolTip": "C:\\K22CNT3\\K22CNT3-ASPNETMVC-NguyenPhuNam\\Lesson07\\Lesson07\\Models\\Mode2210900047.edmx [Diagram1]",
+              "RelativeToolTip": "Lesson07\\Models\\Mode2210900047.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-06-12T03:41:00.58Z",
+              "EditorCaption": " [Diagram1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NpnCreate.cshtml",
+              "DocumentMoniker": "C:\\K22CNT3\\K22CNT3-ASPNETMVC-NguyenPhuNam\\Lesson07\\Lesson07\\Views\\NpnKhoas\\NpnCreate.cshtml",
+              "RelativeDocumentMoniker": "Lesson07\\Views\\NpnKhoas\\NpnCreate.cshtml",
+              "ToolTip": "C:\\K22CNT3\\K22CNT3-ASPNETMVC-NguyenPhuNam\\Lesson07\\Lesson07\\Views\\NpnKhoas\\NpnCreate.cshtml",
+              "RelativeToolTip": "Lesson07\\Views\\NpnKhoas\\NpnCreate.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAASwBIAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T03:22:00.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NpnKhoasController.cs",
+              "DocumentMoniker": "C:\\K22CNT3\\K22CNT3-ASPNETMVC-NguyenPhuNam\\Lesson07\\Lesson07\\Controllers\\NpnKhoasController.cs",
+              "RelativeDocumentMoniker": "Lesson07\\Controllers\\NpnKhoasController.cs",
+              "ToolTip": "C:\\K22CNT3\\K22CNT3-ASPNETMVC-NguyenPhuNam\\Lesson07\\Lesson07\\Controllers\\NpnKhoasController.cs",
+              "RelativeToolTip": "Lesson07\\Controllers\\NpnKhoasController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA4AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T03:06:10.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NpnKetNoi.cs",
+              "DocumentMoniker": "C:\\K22CNT3\\K22CNT3-ASPNETMVC-NguyenPhuNam\\Lesson07\\Lesson07\\Models\\NpnKetNoi.cs",
+              "RelativeDocumentMoniker": "Lesson07\\Models\\NpnKetNoi.cs",
+              "ToolTip": "C:\\K22CNT3\\K22CNT3-ASPNETMVC-NguyenPhuNam\\Lesson07\\Lesson07\\Models\\NpnKetNoi.cs",
+              "RelativeToolTip": "Lesson07\\Models\\NpnKetNoi.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T02:49:37.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\K22CNT3\\K22CNT3-ASPNETMVC-NguyenPhuNam\\Lesson07\\Lesson07\\Web.config",
+              "RelativeDocumentMoniker": "Lesson07\\Web.config",
+              "ToolTip": "C:\\K22CNT3\\K22CNT3-ASPNETMVC-NguyenPhuNam\\Lesson07\\Lesson07\\Web.config",
+              "RelativeToolTip": "Lesson07\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEkAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-06-12T02:46:27.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\K22CNT3\\K22CNT3-ASPNETMVC-NguyenPhuNam\\Lesson07\\Lesson07\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Lesson07\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\K22CNT3\\K22CNT3-ASPNETMVC-NguyenPhuNam\\Lesson07\\Lesson07\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Lesson07\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-12T02:36:40.572Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="K22CNT3NPNModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="npnKhoa">
+    <Key>
+      <PropertyRef Name="NpnMaKH" />
+    </Key>
+    <Property Name="NpnMaKH" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="NpnTenKH" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NpnTrangThai" Type="Boolean" />
+    <NavigationProperty Name="npnSinhViens" Relationship="Self.FK_npnSinhVien_npnKhoa" FromRole="npnKhoa" ToRole="npnSinhVien" />
+  </EntityType>
+  <EntityType Name="npnSinhVien">
+    <Key>
+      <PropertyRef Name="NpnMaSV" />
+    </Key>
+    <Property Name="NpnMaSV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NpnHoSV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NpnTenSV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NpnNgaySinh" Type="DateTime" Precision="0" />
+    <Property Name="NpnPhai" Type="Boolean" />
+    <Property Name="NpnPhone" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="NpnEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NpnMaKH" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="npnKhoa" Relationship="Self.FK_npnSinhVien_npnKhoa" FromRole="npnSinhVien" ToRole="npnKhoa" />
+  </EntityType>
+  <Association Name="FK_npnSinhVien_npnKhoa">
+    <End Role="npnKhoa" Type="Self.npnKhoa" Multiplicity="0..1" />
+    <End Role="npnSinhVien" Type="Self.npnSinhVien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="npnKhoa">
+        <PropertyRef Name="NpnMaKH" />
+      </Principal>
+      <Dependent Role="npnSinhVien">
+        <PropertyRef Name="NpnMaKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="K22CNT3NPNEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="npnKhoas" EntityType="Self.npnKhoa" />
+    <EntitySet Name="npnSinhViens" EntityType="Self.npnSinhVien" />
+    <AssociationSet Name="FK_npnSinhVien_npnKhoa" Association="Self.FK_npnSinhVien_npnKhoa">
+      <End Role="npnKhoa" EntitySet="npnKhoas" />
+      <End Role="npnSinhVien" EntitySet="npnSinhViens" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
