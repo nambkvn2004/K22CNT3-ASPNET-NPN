@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="dbdf410b0189436a9b570250125c3a38" Name="Diagram1">
+        <EntityTypeShape EntityType="NpnK22CNT3Lesson09DbModel.npnKhoa" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NpnK22CNT3Lesson09DbModel.npnSinhVien" Width="1.5" PointX="5.25" PointY="2.25" />
+        <AssociationConnector Association="NpnK22CNT3Lesson09DbModel.FK_npnSinhVien_npnKhoa" />
+        <EntityTypeShape EntityType="NpnK22CNT3Lesson09DbModel.npnMonHoc" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="NpnK22CNT3Lesson09DbModel.npnKetqua" Width="1.5" PointX="7.5" PointY="3" />
+        <AssociationConnector Association="NpnK22CNT3Lesson09DbModel.FK_npnKetqua_npnMonHoc" />
+        <AssociationConnector Association="NpnK22CNT3Lesson09DbModel.FK_npnKetqua_npnSinhVien" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

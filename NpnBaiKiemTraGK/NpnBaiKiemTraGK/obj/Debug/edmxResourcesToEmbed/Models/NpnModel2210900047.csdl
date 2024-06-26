@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NpnK22CNT3Lesson09DbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="npnKhoa">
+    <Key>
+      <PropertyRef Name="NpnMaKH" />
+    </Key>
+    <Property Name="NpnMaKH" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="NpnTenKH" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="npnSinhViens" Relationship="NpnK22CNT3Lesson09DbModel.FK_npnSinhVien_npnKhoa" FromRole="npnKhoa" ToRole="npnSinhVien" />
+  </EntityType>
+  <EntityContainer Name="NpnK22CNT3Lesson09DbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="npnKhoas" EntityType="Self.npnKhoa" />
+    <EntitySet Name="npnSinhViens" EntityType="NpnK22CNT3Lesson09DbModel.npnSinhVien" />
+    <AssociationSet Name="FK_npnSinhVien_npnKhoa" Association="NpnK22CNT3Lesson09DbModel.FK_npnSinhVien_npnKhoa">
+      <End Role="npnKhoa" EntitySet="npnKhoas" />
+      <End Role="npnSinhVien" EntitySet="npnSinhViens" />
+    </AssociationSet>
+    <EntitySet Name="npnMonHocs" EntityType="NpnK22CNT3Lesson09DbModel.npnMonHoc" />
+    <EntitySet Name="npnKetquas" EntityType="NpnK22CNT3Lesson09DbModel.npnKetqua" />
+    <AssociationSet Name="FK_npnKetqua_npnMonHoc" Association="NpnK22CNT3Lesson09DbModel.FK_npnKetqua_npnMonHoc">
+      <End Role="npnMonHoc" EntitySet="npnMonHocs" />
+      <End Role="npnKetqua" EntitySet="npnKetquas" />
+    </AssociationSet>
+    <AssociationSet Name="FK_npnKetqua_npnSinhVien" Association="NpnK22CNT3Lesson09DbModel.FK_npnKetqua_npnSinhVien">
+      <End Role="npnSinhVien" EntitySet="npnSinhViens" />
+      <End Role="npnKetqua" EntitySet="npnKetquas" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="npnSinhVien">
+    <Key>
+      <PropertyRef Name="NpnMaSV" />
+    </Key>
+    <Property Name="NpnMaSV" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="NpnHoSV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NpnTenSV" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NpnNgaySinh" Type="DateTime" Precision="0" />
+    <Property Name="NpnPhai" Type="Boolean" />
+    <Property Name="NpnMaKH" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="npnKhoa" Relationship="NpnK22CNT3Lesson09DbModel.FK_npnSinhVien_npnKhoa" FromRole="npnSinhVien" ToRole="npnKhoa" />
+    <Property Name="NpnNoiSinh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NpnHocBong" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NpnDiemTrungBinh" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="npnKetquas" Relationship="NpnK22CNT3Lesson09DbModel.FK_npnKetqua_npnSinhVien" FromRole="npnSinhVien" ToRole="npnKetqua" />
+  </EntityType>
+  <Association Name="FK_npnSinhVien_npnKhoa">
+    <End Type="NpnK22CNT3Lesson09DbModel.npnKhoa" Role="npnKhoa" Multiplicity="0..1" />
+    <End Type="NpnK22CNT3Lesson09DbModel.npnSinhVien" Role="npnSinhVien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="npnKhoa">
+        <PropertyRef Name="NpnMaKH" />
+      </Principal>
+      <Dependent Role="npnSinhVien">
+        <PropertyRef Name="NpnMaKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="npnMonHoc">
+    <Key>
+      <PropertyRef Name="npnMaMH" />
+    </Key>
+    <Property Name="npnMaMH" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="npnTenMH" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="npnSotiet" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="npnKetquas" Relationship="NpnK22CNT3Lesson09DbModel.FK_npnKetqua_npnMonHoc" FromRole="npnMonHoc" ToRole="npnKetqua" />
+  </EntityType>
+  <EntityType Name="npnKetqua">
+    <Key>
+      <PropertyRef Name="NpnMaSV" />
+      <PropertyRef Name="NpnMaMH" />
+    </Key>
+    <Property Name="NpnMaSV" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="NpnMaMH" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="NpnDiem" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="npnMonHoc" Relationship="NpnK22CNT3Lesson09DbModel.FK_npnKetqua_npnMonHoc" FromRole="npnKetqua" ToRole="npnMonHoc" />
+    <NavigationProperty Name="npnSinhVien" Relationship="NpnK22CNT3Lesson09DbModel.FK_npnKetqua_npnSinhVien" FromRole="npnKetqua" ToRole="npnSinhVien" />
+  </EntityType>
+  <Association Name="FK_npnKetqua_npnMonHoc">
+    <End Type="NpnK22CNT3Lesson09DbModel.npnMonHoc" Role="npnMonHoc" Multiplicity="1" />
+    <End Type="NpnK22CNT3Lesson09DbModel.npnKetqua" Role="npnKetqua" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="npnMonHoc">
+        <PropertyRef Name="npnMaMH" />
+      </Principal>
+      <Dependent Role="npnKetqua">
+        <PropertyRef Name="NpnMaMH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_npnKetqua_npnSinhVien">
+    <End Type="NpnK22CNT3Lesson09DbModel.npnSinhVien" Role="npnSinhVien" Multiplicity="1" />
+    <End Type="NpnK22CNT3Lesson09DbModel.npnKetqua" Role="npnKetqua" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="npnSinhVien">
+        <PropertyRef Name="NpnMaSV" />
+      </Principal>
+      <Dependent Role="npnKetqua">
+        <PropertyRef Name="NpnMaSV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

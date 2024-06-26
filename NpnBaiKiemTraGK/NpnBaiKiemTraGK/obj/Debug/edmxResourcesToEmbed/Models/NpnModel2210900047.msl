@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NpnK22CNT3Lesson09DbModelStoreContainer" CdmEntityContainer="NpnK22CNT3Lesson09DbEntities">
+    <EntitySetMapping Name="npnKhoas">
+      <EntityTypeMapping TypeName="NpnK22CNT3Lesson09DbModel.npnKhoa">
+        <MappingFragment StoreEntitySet="npnKhoa">
+          <ScalarProperty Name="NpnMaKH" ColumnName="NpnMaKH" />
+          <ScalarProperty Name="NpnTenKH" ColumnName="NpnTenKH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="npnSinhViens">
+      <EntityTypeMapping TypeName="NpnK22CNT3Lesson09DbModel.npnSinhVien">
+        <MappingFragment StoreEntitySet="npnSinhVien">
+          <ScalarProperty Name="NpnDiemTrungBinh" ColumnName="NpnDiemTrungBinh" />
+          <ScalarProperty Name="NpnHocBong" ColumnName="NpnHocBong" />
+          <ScalarProperty Name="NpnNoiSinh" ColumnName="NpnNoiSinh" />
+          <ScalarProperty Name="NpnMaKH" ColumnName="NpnMaKH" />
+          <ScalarProperty Name="NpnPhai" ColumnName="NpnPhai" />
+          <ScalarProperty Name="NpnNgaySinh" ColumnName="NpnNgaySinh" />
+          <ScalarProperty Name="NpnTenSV" ColumnName="NpnTenSV" />
+          <ScalarProperty Name="NpnHoSV" ColumnName="NpnHoSV" />
+          <ScalarProperty Name="NpnMaSV" ColumnName="NpnMaSV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="npnMonHocs">
+      <EntityTypeMapping TypeName="NpnK22CNT3Lesson09DbModel.npnMonHoc">
+        <MappingFragment StoreEntitySet="npnMonHoc">
+          <ScalarProperty Name="npnSotiet" ColumnName="npnSotiet" />
+          <ScalarProperty Name="npnTenMH" ColumnName="npnTenMH" />
+          <ScalarProperty Name="npnMaMH" ColumnName="npnMaMH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="npnKetquas">
+      <EntityTypeMapping TypeName="NpnK22CNT3Lesson09DbModel.npnKetqua">
+        <MappingFragment StoreEntitySet="npnKetqua">
+          <ScalarProperty Name="NpnDiem" ColumnName="NpnDiem" />
+          <ScalarProperty Name="NpnMaMH" ColumnName="NpnMaMH" />
+          <ScalarProperty Name="NpnMaSV" ColumnName="NpnMaSV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

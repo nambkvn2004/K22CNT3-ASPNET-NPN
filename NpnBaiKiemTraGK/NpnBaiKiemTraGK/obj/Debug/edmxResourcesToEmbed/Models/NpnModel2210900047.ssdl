@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NpnK22CNT3Lesson09DbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'NpnK22CNT3Lesson09Db.dbo.npnKetqua' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="npnKetqua">
+    <Key>
+      <PropertyRef Name="NpnMaSV" />
+      <PropertyRef Name="NpnMaMH" />
+    </Key>
+    <Property Name="NpnMaSV" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="NpnMaMH" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="NpnDiem" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="npnKhoa">
+    <Key>
+      <PropertyRef Name="NpnMaKH" />
+    </Key>
+    <Property Name="NpnMaKH" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="NpnTenKH" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="npnMonHoc">
+    <Key>
+      <PropertyRef Name="npnMaMH" />
+    </Key>
+    <Property Name="npnMaMH" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="npnTenMH" Type="nvarchar" MaxLength="50" />
+    <Property Name="npnSotiet" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="npnSinhVien">
+    <Key>
+      <PropertyRef Name="NpnMaSV" />
+    </Key>
+    <Property Name="NpnMaSV" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="NpnHoSV" Type="nvarchar" MaxLength="50" />
+    <Property Name="NpnTenSV" Type="nvarchar" MaxLength="50" />
+    <Property Name="NpnPhai" Type="bit" />
+    <Property Name="NpnNgaySinh" Type="date" />
+    <Property Name="NpnNoiSinh" Type="nvarchar" MaxLength="50" />
+    <Property Name="NpnMaKH" Type="nchar" MaxLength="10" />
+    <Property Name="NpnHocBong" Type="nvarchar" MaxLength="50" />
+    <Property Name="NpnDiemTrungBinh" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <Association Name="FK_npnKetqua_npnMonHoc">
+    <End Role="npnMonHoc" Type="Self.npnMonHoc" Multiplicity="1" />
+    <End Role="npnKetqua" Type="Self.npnKetqua" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="npnMonHoc">
+        <PropertyRef Name="npnMaMH" />
+      </Principal>
+      <Dependent Role="npnKetqua">
+        <PropertyRef Name="NpnMaMH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_npnKetqua_npnSinhVien">
+    <End Role="npnSinhVien" Type="Self.npnSinhVien" Multiplicity="1" />
+    <End Role="npnKetqua" Type="Self.npnKetqua" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="npnSinhVien">
+        <PropertyRef Name="NpnMaSV" />
+      </Principal>
+      <Dependent Role="npnKetqua">
+        <PropertyRef Name="NpnMaSV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_npnSinhVien_npnKhoa">
+    <End Role="npnKhoa" Type="Self.npnKhoa" Multiplicity="0..1" />
+    <End Role="npnSinhVien" Type="Self.npnSinhVien" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="npnKhoa">
+        <PropertyRef Name="NpnMaKH" />
+      </Principal>
+      <Dependent Role="npnSinhVien">
+        <PropertyRef Name="NpnMaKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="NpnK22CNT3Lesson09DbModelStoreContainer">
+    <EntitySet Name="npnKhoa" EntityType="Self.npnKhoa" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="npnMonHoc" EntityType="Self.npnMonHoc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="npnSinhVien" EntityType="Self.npnSinhVien" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="npnKetqua" EntityType="Self.npnKetqua" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [npnKetqua].[NpnMaSV] AS [NpnMaSV], 
+    [npnKetqua].[NpnMaMH] AS [NpnMaMH], 
+    [npnKetqua].[NpnDiem] AS [NpnDiem]
+    FROM [dbo].[npnKetqua] AS [npnKetqua]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_npnKetqua_npnMonHoc" Association="Self.FK_npnKetqua_npnMonHoc">
+      <End Role="npnMonHoc" EntitySet="npnMonHoc" />
+      <End Role="npnKetqua" EntitySet="npnKetqua" />
+    </AssociationSet>
+    <AssociationSet Name="FK_npnKetqua_npnSinhVien" Association="Self.FK_npnKetqua_npnSinhVien">
+      <End Role="npnSinhVien" EntitySet="npnSinhVien" />
+      <End Role="npnKetqua" EntitySet="npnKetqua" />
+    </AssociationSet>
+    <AssociationSet Name="FK_npnSinhVien_npnKhoa" Association="Self.FK_npnSinhVien_npnKhoa">
+      <End Role="npnKhoa" EntitySet="npnKhoa" />
+      <End Role="npnSinhVien" EntitySet="npnSinhVien" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
