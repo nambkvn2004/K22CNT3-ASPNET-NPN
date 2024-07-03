@@ -1,0 +1,58 @@
+﻿@model IEnumerable<NpnK22CNT3Lesson10Db.Models.NpnAccount>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_NpnLayout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NpnUserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NpnPassword)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NpnFullName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NpnEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NpnActive)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NpnUserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NpnPassword)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NpnFullName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NpnEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NpnActive)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.NpnID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.NpnID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.NpnID })
+        </td>
+    </tr>
+}
+
+</table>

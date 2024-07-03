@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NpnK22CNT3Lesson10ModelStoreContainer" CdmEntityContainer="NpnK22CNT3Lesson10Entities">
+    <EntitySetMapping Name="NpnAccounts">
+      <EntityTypeMapping TypeName="NpnK22CNT3Lesson10Model.NpnAccount">
+        <MappingFragment StoreEntitySet="NpnAccount">
+          <ScalarProperty Name="NpnID" ColumnName="NpnID" />
+          <ScalarProperty Name="NpnUserName" ColumnName="NpnUserName" />
+          <ScalarProperty Name="NpnPassword" ColumnName="NpnPassword" />
+          <ScalarProperty Name="NpnFullName" ColumnName="NpnFullName" />
+          <ScalarProperty Name="NpnEmail" ColumnName="NpnEmail" />
+          <ScalarProperty Name="NpnActive" ColumnName="NpnActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

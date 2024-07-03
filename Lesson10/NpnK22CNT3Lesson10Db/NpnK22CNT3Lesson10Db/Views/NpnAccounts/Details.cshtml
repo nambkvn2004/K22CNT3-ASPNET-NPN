@@ -1,0 +1,59 @@
+﻿@model NpnK22CNT3Lesson10Db.Models.NpnAccount
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>NpnAccount</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NpnUserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NpnUserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NpnPassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NpnPassword)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NpnFullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NpnFullName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NpnEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NpnEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NpnActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NpnActive)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.NpnID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
